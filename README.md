@@ -75,6 +75,8 @@ pnpm dev
 
 预置账号：`user` / `123456`（文档与检索），`admin` / `123456`（系统管理），`reviewer` / `123456`（审核）。
 
+新增账号有两种方式：管理员在「用户管理」里新建；或直接调后端 `POST /auth/register`（后端已实现，支持可选的邮箱激活，`REQUIRE_EMAIL_VERIFICATION=true` 时生效，默认关闭）。前端目前没有注册 / 忘记密码页面。
+
 ## 已对接接口
 
 - 登录 / 资料 / 改密（access + refresh token）
